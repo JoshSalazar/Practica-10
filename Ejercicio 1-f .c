@@ -12,9 +12,10 @@ int main()
   
   for(i = 0; i < 3; i++)
   {
+    printf("\n");
     for(j = 0; j<3; j++)
     {
-      printf("%d", arr[i][j]);
+      printf("\t%d", arr[i][j]);
     }
   }
 }
