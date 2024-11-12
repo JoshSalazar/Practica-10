@@ -1,31 +1,35 @@
-/*Alfonso Francisco De Abiega L'Eglisse
-matrices, practica 10*/
+/*Salazar Anicasio Joshua
+ejercicio 5 matriz 3x3
+Práctica 10 18/10/24*/
 
 #include <stdio.h>
 
 int main()
 {
-    int arr1[3][3], arr2[3][3], res[3][3];
-    int val1, val2, val3 ,i, j;
+    int mat1[3][3], mat2[3][3], res[3][3];
+    int N1, N2, N3;
+    int i, j;
 
-    printf("Pedir valores Matriz 1\n");
+    printf("Introduzca los valores de la primera matriz.\n");
+    
     for(i=0; i<3; i++)
     {
-        printf("Dar los valores del renglos separados por una coma(,)\n");
-        scanf("%d,%d,%d", &val1, &val2, &val3);
-        arr1[i][0] = val1;
-        arr1[i][1] = val2;
-        arr1[i][2] = val3;
+        printf("Introduzca los valores del renglón, separados por una coma(,)\n");
+        scanf("%d,%d,%d", &N1, &N2, &N3);
+        
+        mat1[i][0] = N1;
+        mat1[i][1] = N2;
+        mat1[i][2] = N3;
     }
 
-    printf("Pedir valores Matriz 2\n");
+    printf("Introduzca los valoresde la segunda matriz.\n");
     for(i=0; i<3; i++)
     {
-        printf("Dar los valores del renglos separados por una coma(,)\n");
-        scanf("%d,%d,%d", &val1, &val2, &val3);
-        arr1[i][0] = val1;
-        arr1[i][1] = val2;
-        arr1[i][2] = val3;
+        printf("Introduzca los valores del renglón, separados por una coma(,)\n");
+        scanf("%d,%d,%d", &N1, &N2, &N3);
+        mat2[i][0] = N1;
+        mat2[i][1] = N2;
+        mat2[i][2] = N3;
     }
 
     //suma de matrices
@@ -33,12 +37,12 @@ int main()
     {
       for(j=0; j<3; j++)
       {
-        res[i][j] = arr1[i][j];
+        res[i][j] = mat1[i][j] + mat2[i][j];
       }
     }
   
     printf("\n");
-    printf("Imprimir matriz\n");
+    printf("Esta es la matriz resultante:\n");
     for(i=0; i<3; i++)
     {
         for(j=0; j<3; j++)
