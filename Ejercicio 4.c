@@ -1,5 +1,5 @@
 /*Salazar Anicasio Joshua
-ejercicio 1 matriz 3x3
+ejercicio 4 matriz 3x3
 Práctica 10 18/10/24*/
 
 #include <stdio.h>
